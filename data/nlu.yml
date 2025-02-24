@@ -1,0 +1,50 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hello
+      - hi
+      - hey
+      - good morning
+      - good evening
+      - what's up
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - take care
+      - farewell
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you human?
+      - am I talking to a machine?
+
+  - intent: add_wallet
+    examples: |
+      - I want to add a new wallet
+      - Add my wallet
+      - Register a wallet
+      - Save my wallet with address [0x1234](wallet_address)
+
+  - intent: merge_wallets
+    examples: |
+      - Merge my wallets all x token [0x1111](wallet_address) and [0x2222](wallet_address) into [0x9999](target_wallet)
+      - Combine [0xAAAA](wallet_address) and [0xBBBB](wallet_address) into [0xZZZZ](target_wallet)
+      - Move tokens from [0x1111](wallet_address) and [0x2222](wallet_address) to [0x9999](target_wallet)
+
+  - intent: multisend
+    examples: |
+      - Send [10](amount) ETH from [0xAAAA](wallet_address) to [0xBBBB](recipient_wallet) , [0xCCCC](recipient_wallet) and [0xDDDD](recipient_wallet)
+      - Transfer [50](amount) USDT from [0x1111](wallet_address) to multiple wallets: [0x2222, 0x3333](recipient_wallet)
+      - Distribute [100](amount) MATIC to [0x4444, 0x5555, 0x6666](recipient_wallet)
+
+  - intent: swap_tokens
+    examples: |
+      - Swap [100](amount) USDT to ETH in my wallet [0x1234](wallet_address)
+      - Convert [50](amount) MATIC to BNB
+      - Exchange [200](amount) USDT to [ETH](target_token) from [0x1111](wallet_address)

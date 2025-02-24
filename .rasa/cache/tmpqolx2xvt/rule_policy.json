@@ -1,0 +1,22 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"add_wallet\"}}]": "action_add_wallet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"add_wallet\"}}, {\"prev_action\": {\"action_name\": \"action_add_wallet\"}, \"user\": {\"intent\": \"add_wallet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"multisend\"}}]": "action_multisend",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"multisend\"}}, {\"prev_action\": {\"action_name\": \"action_multisend\"}, \"user\": {\"intent\": \"multisend\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"merge_wallets\"}}]": "action_merge_wallets",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"merge_wallets\"}}, {\"prev_action\": {\"action_name\": \"action_merge_wallets\"}, \"user\": {\"intent\": \"merge_wallets\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"swap_tokens\"}}]": "action_swap_tokens",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"swap_tokens\"}}, {\"prev_action\": {\"action_name\": \"action_swap_tokens\"}, \"user\": {\"intent\": \"swap_tokens\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent restart",
+      "predicting default action with intent back",
+      "predicting default action with intent session_start"
+    ]
+  }
+}

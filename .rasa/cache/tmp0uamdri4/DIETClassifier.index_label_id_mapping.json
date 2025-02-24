@@ -1,0 +1,6 @@
+{
+  "0": "add_wallet",
+  "1": "merge_wallets",
+  "2": "multisend",
+  "3": "swap_tokens"
+}

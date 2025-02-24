@@ -1,0 +1,51 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "add_wallet": 0,
+        "back": 1,
+        "merge_wallets": 2,
+        "multisend": 3,
+        "nlu_fallback": 4,
+        "out_of_scope": 5,
+        "restart": 6,
+        "session_start": 7,
+        "swap_tokens": 8
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_add_wallet": 13,
+        "action_merge_wallets": 14,
+        "action_multisend": 15,
+        "action_swap_tokens": 16
+      },
+      "entities": {},
+      "slots": {
+        "wallet_address_0": 0,
+        "target_wallet_0": 1,
+        "recipient_wallet_0": 2,
+        "amount_0": 3,
+        "amount_1": 4,
+        "target_token_0": 5
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

@@ -1,0 +1,37 @@
+version: "3.1"
+
+rules:
+  - rule: Greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Answer bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - rule: Add a wallet
+    steps:
+      - intent: add_wallet
+      - action: action_add_wallet
+
+  - rule: Merge wallets
+    steps:
+      - intent: merge_wallets
+      - action: action_merge_wallets
+
+  - rule: Multisend tokens
+    steps:
+      - intent: multisend
+      - action: action_multisend
+
+  - rule: Swap tokens
+    steps:
+      - intent: swap_tokens
+      - action: action_swap_tokens

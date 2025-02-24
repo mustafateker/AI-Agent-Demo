@@ -1,0 +1,36 @@
+version: "3.1"
+stories:
+  - story: User greets the bot
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: User says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: User asks if bot is a bot
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - story: Add a new wallet
+    steps:
+      - intent: add_wallet
+      - action: action_add_wallet
+
+  - story: Merge wallets
+    steps:
+      - intent: merge_wallets
+      - action: action_merge_wallets
+
+  - story: Multisend tokens
+    steps:
+      - intent: multisend
+      - action: action_multisend
+
+  - story: Swap tokens
+    steps:
+      - intent: swap_tokens
+      - action: action_swap_tokens

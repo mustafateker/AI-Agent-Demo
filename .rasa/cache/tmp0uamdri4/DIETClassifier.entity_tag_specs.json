@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-amount",
+      "2": "I-amount",
+      "3": "L-amount",
+      "4": "U-amount",
+      "5": "B-recipient_wallet",
+      "6": "I-recipient_wallet",
+      "7": "L-recipient_wallet",
+      "8": "U-recipient_wallet",
+      "9": "B-target_token",
+      "10": "I-target_token",
+      "11": "L-target_token",
+      "12": "U-target_token",
+      "13": "B-target_wallet",
+      "14": "I-target_wallet",
+      "15": "L-target_wallet",
+      "16": "U-target_wallet",
+      "17": "B-wallet_address",
+      "18": "I-wallet_address",
+      "19": "L-wallet_address",
+      "20": "U-wallet_address",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-amount": 1,
+      "I-amount": 2,
+      "L-amount": 3,
+      "U-amount": 4,
+      "B-recipient_wallet": 5,
+      "I-recipient_wallet": 6,
+      "L-recipient_wallet": 7,
+      "U-recipient_wallet": 8,
+      "B-target_token": 9,
+      "I-target_token": 10,
+      "L-target_token": 11,
+      "U-target_token": 12,
+      "B-target_wallet": 13,
+      "I-target_wallet": 14,
+      "L-target_wallet": 15,
+      "U-target_wallet": 16,
+      "B-wallet_address": 17,
+      "I-wallet_address": 18,
+      "L-wallet_address": 19,
+      "U-wallet_address": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

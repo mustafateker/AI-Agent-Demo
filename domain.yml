@@ -1,0 +1,50 @@
+version: "3.1"
+slots:
+  wallet_address:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: wallet_address
+
+  target_wallet:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: target_wallet
+
+  recipient_wallet:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: recipient_wallet
+
+  amount:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: amount
+
+  target_token:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: target_token
+
+entities:
+  - wallet_address
+  - target_wallet
+  - recipient_wallet
+  - amount
+  - target_token
+
+intents:
+  - add_wallet
+  - merge_wallets
+  - multisend
+  - swap_tokens
+
+actions:
+  - action_add_wallet
+  - action_merge_wallets
+  - action_multisend
+  - action_swap_tokens
